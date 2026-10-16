@@ -8,8 +8,9 @@ previewing, and the Google Sites migration steps.
   old Google Site (white/slate bands, Roboto + Open Sans); see README "Bands".
 - Only plugins in the `github-pages` gem work (GitHub builds the site, no
   custom build step).
-- Internal links and file links use the `relative_url` filter: the site is
-  served under `/personal-website/` until the custom domain is set.
+- Served at https://www.joelvillatoro.com/ (`CNAME`, set 2026-10-16; both
+  joelvillatoro.com and joeldavidvillatoro.com are verified on Joel's GitHub
+  account). Keep using the `relative_url` filter for internal links anyway.
 - Jekyll/Ruby exist only in the dev container. From WSL, Claude can't build or
   preview; ask Joel to run `bundle exec jekyll serve` in the container.
 - The Google Site isn't reachable from Claude's sandbox; Joel pastes text or
