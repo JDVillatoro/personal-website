@@ -1,0 +1,24 @@
+{
+  "name": "Website (Jekyll)",
+  // Microsoft's Jekyll image: Ruby + Jekyll, runs as the `vscode` user (not
+  // root). It runs `bundle install` from the Gemfile when the container is
+  // created.
+  "image": "mcr.microsoft.com/devcontainers/jekyll:2",
+  "forwardPorts": [4000],
+  // Same Claude login setup as the notes-toolkit containers.
+  "initializeCommand": "mkdir -p ${localEnv:HOME}/.claude-container",
+  "mounts": [
+    "source=${localEnv:HOME}/.claude-container,target=/home/vscode/.claude,type=bind"
+  ],
+  "remoteEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "anthropic.claude-code"
+      ]
+    }
+  }
+}

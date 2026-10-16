@@ -1,0 +1,28 @@
+# Site settings. Jekyll reads this file; restart `jekyll serve` after editing it.
+title: Joel Villatoro
+description: Mathematician
+email: ""            # fill in, shown in the footer if set
+
+# Links in the top menu, in order. `url` is a page's path (see its permalink).
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Teaching
+    url: /teaching/
+  - title: CV
+    url: /cv/
+
+# Math is shown with MathJax (loaded in _layouts/default.html). Kramdown treats
+# $$...$$ as math: inside a sentence it's inline, as its own paragraph it's a
+# display. Plain $...$ also works but Markdown may mangle _ and * inside it.
+markdown: kramdown
+
+# Files in the repo that are not part of the site.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
