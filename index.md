@@ -4,7 +4,10 @@ title: Home
 permalink: /
 ---
 
-![Joel Villatoro on a beach at sunset]({{ '/files/photo.jpg' | relative_url }})
+<section class="band dark" markdown="1">
+<div class="hero" markdown="1">
+<img src="{{ '/files/photo.jpg' | relative_url }}" alt="Joel Villatoro on a beach at sunset">
+<div markdown="1">
 
 # Joel Villatoro
 
@@ -20,6 +23,12 @@ differentiable stacks and connections with Poisson and symplectic geometry.
 
 [Academic CV (PDF)]({{ '/files/cv.pdf' | relative_url }})
 
+</div>
+</div>
+</section>
+
+<section class="band" markdown="1">
+
 ## Academic Employment
 
 - **2024–present:** Visiting Lecturer, Indiana University Bloomington
@@ -31,3 +40,5 @@ differentiable stacks and connections with Poisson and symplectic geometry.
 
 - **2012–2018:** PhD in Mathematics, University of Illinois at Urbana-Champaign
 - **2008–2012:** Bachelor of Science in Mathematics, University of Oklahoma
+
+</section>

@@ -23,6 +23,11 @@ should be in the menu. Link to files with
 `{{ '/files/x.pdf' | relative_url }}` so links work at both the github.io
 address and the custom domain.
 
+**Bands:** pages are built from full-width stripes, like the old Google
+Site. Wrap a part of a page in `<section class="band" markdown="1">` (white)
+or `<section class="band dark" markdown="1">` (slate), closed by
+`</section>`, with blank lines around the Markdown inside.
+
 **Math:** `$$...$$` (see the comment in `_config.yml`).
 
 ## Previewing

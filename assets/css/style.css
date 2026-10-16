@@ -1,54 +1,102 @@
-/* Plain, readable single-column layout. Colors adapt to dark mode. */
+/* Look of the old Google Site: full-width bands alternating white and dark
+   slate, slate-blue Roboto headings, Open Sans body text.
+   In a page, wrap content in <section class="band" markdown="1"> (white) or
+   <section class="band dark" markdown="1"> (slate). */
 :root {
-  --text: #1d1d1f;
-  --muted: #5f6368;
+  --text: #212121;
+  --muted: #6a6a6a;
   --bg: #ffffff;
-  --link: #1a5fb4;
-  --rule: #e2e2e2;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e6e6e6;
-    --muted: #a0a0a0;
-    --bg: #161618;
-    --link: #8ab4f8;
-    --rule: #333336;
-  }
+  --heading: #537391;
+  --accent: #74a4cb;
+  --link: #476581;
+  --link-hover: #3072af;
+  --dark-bg: #576c7e;
+  --dark-text: #e8f4ff;
+  --rule: #e6e7e7;
+  --width: 56rem;
 }
 
 body {
-  margin: 0 auto;
-  max-width: 46rem;
-  padding: 1.5rem 1rem 3rem;
-  font: 17px/1.6 Georgia, "Times New Roman", serif;
+  margin: 0;
+  font: 12pt/1.56 "Open Sans", sans-serif;
   color: var(--text);
   background: var(--bg);
+  overflow-x: hidden; /* full-width bands include the scrollbar's width */
 }
 
 a { color: var(--link); }
+a:hover { color: var(--link-hover); }
 
+/* Header: white bar, light-blue spaced-out site title, menu on the right. */
 header {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 2rem;
+  gap: 0.5rem 2rem;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
 }
 .site-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: var(--text);
+  font: 500 15pt Roboto, sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--accent);
   text-decoration: none;
 }
-nav { display: flex; flex-wrap: wrap; gap: 1rem; }
-nav a { color: var(--muted); text-decoration: none; }
-nav a:hover, nav a[aria-current="page"] { color: var(--text); text-decoration: underline; }
+nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+nav a {
+  font-family: Roboto, sans-serif;
+  color: var(--heading);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a[aria-current="page"] {
+  color: var(--heading);
+  border-bottom-color: var(--accent);
+}
 
-h1, h2, h3 { line-height: 1.25; }
-img { max-width: 100%; height: auto; border-radius: 6px; }
+/* Content column. Bands stretch to the full window width. */
+main {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.band {
+  margin: 0 calc(50% - 50vw);
+  padding: 2.5rem calc(50vw - 50%);
+}
+.band.dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+.band.dark h1, .band.dark h2, .band.dark h3,
+.band.dark a { color: var(--dark-text); }
+
+h1, h2, h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: var(--heading);
+}
+h1 { font-size: 26pt; line-height: 1.3; margin: 0.5rem 0 1rem; }
+h2 { font-size: 18pt; line-height: 1.4; margin: 2rem 0 0.75rem; }
+h3 { font-size: 13pt; line-height: 1.5; letter-spacing: 1px; margin: 1.75rem 0 0.25rem; }
+h3 a { text-decoration: none; }
+h3 a:hover { text-decoration: underline; }
+.band > :first-child { margin-top: 0; }
+
+img { max-width: 100%; height: auto; }
+
+/* Home page: photo beside the bio, stacked on narrow screens. */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.hero img { flex: 1 1 18rem; border-radius: 4px; }
+.hero > div { flex: 1 1 20rem; }
 
 /* YouTube embeds: full width, 16:9. */
 .video iframe {
@@ -58,9 +106,9 @@ img { max-width: 100%; height: auto; border-radius: 6px; }
 }
 
 footer {
-  margin-top: 3rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--rule);
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
   color: var(--muted);
   font-size: 0.9rem;
 }

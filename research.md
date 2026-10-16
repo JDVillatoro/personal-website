@@ -4,6 +4,8 @@ title: Research
 permalink: /research/
 ---
 
+<section class="band" markdown="1">
+
 # Research
 
 ## For Non-Experts
@@ -162,6 +164,10 @@ A brief iPython notebook hosted on Google's Colab service. It exposits a
 geometric proof of the fundamental theorem of algebra. The proof is
 supplemented with visualizations to illustrate the key concepts of the proof.
 
+</section>
+
+<section class="band dark" markdown="1">
+
 ## Recorded Talks
 
 ### On the algebraic geometry and homotopy theory of sheaves of Lie-Rinehart structures
@@ -194,3 +200,5 @@ manifold. To that end, we will define a site (a category with a topology) whose
 objects are Dirac manifolds, $$\mathrm{DMan}$$, and explain how to associate a
 stack over $$\mathrm{DMan}$$ to any symplectic groupoid. Furthermore, we will
 relate isomorphisms of such stacks with symplectic Morita equivalences.
+
+</section>
