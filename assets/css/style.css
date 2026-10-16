@@ -13,7 +13,6 @@
   --dark-bg: #576c7e;
   --dark-text: #e8f4ff;
   --rule: #d5dde4;
-  --tint-bg: #eef3f7;
   --width: 56rem;
 }
 
@@ -80,7 +79,6 @@ main {
 }
 .band.dark h1, .band.dark h2, .band.dark h3,
 .band.dark a { color: var(--dark-text); }
-.band.tint { background: var(--tint-bg); }
 
 h1, h2, h3 {
   font-family: Roboto, sans-serif;
@@ -163,6 +161,11 @@ img { max-width: 100%; height: auto; }
 /* The big "About My Research" block: lines in the heading color. */
 .collapsible.section { border-color: var(--heading); }
 .collapsible.section .collapsible-head { padding-top: 0.1rem; }
+/* On a dark band: light lines, chevron and text. */
+.band.dark .collapsible { border-color: rgba(232, 244, 255, 0.35); }
+.band.dark .collapsible-meta { color: rgba(232, 244, 255, 0.8); }
+.band.dark .chevron { fill: var(--dark-text); background: rgba(255, 255, 255, 0.12); }
+.band.dark .collapsible summary:hover .chevron { background: rgba(255, 255, 255, 0.22); }
 
 /* Download link on the CV page, styled like the old site's buttons. */
 .button {

@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-<section class="band tint" markdown="1">
+<section class="band dark" markdown="1">
 
 {% capture nonexperts %}
 My research is motivated by a deep interest in the study of the relationship
