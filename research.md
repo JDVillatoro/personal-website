@@ -49,9 +49,17 @@ geometric constructions and objects that appear in these fields.
 
 ## Papers and Preprints
 
-### [Convolution algebras of double groupoids and strict 2-groups]({{ '/files/double-groupoids-2-groups.pdf' | relative_url }})
+### [On the holonomy of Lie algebroids](https://arxiv.org/abs/2608.19399)
 
-With Angel Roman. *Preprint.*
+With Pooja Joshi. *Preprint* (2026).
+
+### [Simplicial sheaves of modules and Morita invariance of groupoid cohomology](https://arxiv.org/abs/2509.07285)
+
+With Xiang Tang. *Preprint* (2025).
+
+### [Convolution algebras of double groupoids and strict 2-groups](https://arxiv.org/abs/2312.00341)
+
+With Angel Román. *SIGMA* 20 (2024), 093.
 
 Double groupoids are a type of higher groupoid structure that can arise when
 one has two distinct groupoid products on the same set of arrows. A
@@ -63,9 +71,9 @@ investigate in what sense these two convolution operations are compatible. We
 use the representation theory of compact Lie groups to get insight into a
 certain class of 2-groups.
 
-### [On the integrability of Lie algebroids by diffeological spaces](https://arxiv.org/abs/2309.07258)
+### [On the integrability of Lie algebroids by diffeological spaces](https://doi.org/10.1016/j.indag.2025.07.011)
 
-*Preprint.*
+*Indagationes Mathematicae* 37 (2026), no. 4, 1192–1242.
 
 Lie's third theorem does not hold for Lie groupoids and Lie algebroids. In this
 article, we show that Lie's third theorem is valid within a specific class of
@@ -82,7 +90,7 @@ theorem in this context.
 
 ### [On sheaves of Lie-Rinehart algebras](https://arxiv.org/abs/2010.15463)
 
-*Preprint.*
+*Preprint* (2020).
 
 We study sheaves of Lie-Rinehart algebras over locally ringed spaces. We
 introduce morphisms and comorphisms of such sheaves and prove factorization
@@ -94,12 +102,10 @@ manifolds. We show that, under some reasonable assumptions, such sheaves induce
 a partition of the underlying manifold into leaves and that these leaves are
 precisely the orbits of the fundamental groupoid.
 
-### Integration of singular foliations via paths
+### [Integration of singular foliations via paths](https://academic.oup.com/imrn/article-abstract/2022/23/18401/6362694)
 
-<!-- TODO: link. The Google Site linked this through an email-tracking redirect. -->
-
-With Alfonso Garmendia. *Published in International Mathematics Research
-Notices.*
+With Alfonso Garmendia. *International Mathematics Research Notices* 2022,
+no. 23, 18401–18445.
 
 We give a new construction of the holonomy and fundamental groupoids of a
 singular foliation. In contrast with the existing construction of
@@ -113,9 +119,17 @@ invariants. As an application of our work, we prove that the constructions of
 the fundamental and holonomy groupoid of a foliation have functorial
 properties.
 
+### [Picard groups of b-symplectic manifolds](https://www.intlpress.com/site/pub/pages/journals/items/jsg/content/vols/0019/0003/a006/index.php)
+
+*Journal of Symplectic Geometry* 19 (2021), no. 3, 723–775.
+
+We compute the Picard group of a stable b-symplectic manifold $$M$$ by
+introducing a collection of discrete invariants $$Gr$$ which classify $$M$$ up
+to Morita equivalence.
+
 ### [Stacks in Poisson Geometry](https://arxiv.org/abs/1806.01939) (PhD thesis)
 
-*Dissertation accepted by the University of Illinois.*
+*PhD thesis, University of Illinois at Urbana-Champaign* (2018).
 
 This thesis is divided into four chapters. The first chapter discusses the
 relationship between stacks on a site and groupoids internal to the site. It
@@ -131,7 +145,7 @@ Morita equivalence and computing their Picard group.
 
 ### [Poisson manifolds and their associated stacks](https://link.springer.com/article/10.1007/s11005-017-1012-5)
 
-*Published in Letters in Mathematical Physics.*
+*Letters in Mathematical Physics* (2018), no. 3, 897–926.
 
 We associate to any integrable Poisson manifold a stack, i.e., a category
 fibered in groupoids over a site. The site in question has objects Dirac
@@ -139,14 +153,6 @@ manifolds and morphisms pairs consisting of a smooth map and a closed 2-form.
 We show that two Poisson manifolds are symplectically Morita equivalent if and
 only if their associated stacks are isomorphic. We also discuss the
 non-integrable case.
-
-### [Picard groups of b-symplectic manifolds](https://www.intlpress.com/site/pub/pages/journals/items/jsg/content/vols/0019/0003/a006/index.php)
-
-*Published in Journal of Symplectic Geometry.*
-
-We compute the Picard group of a stable b-symplectic manifold $$M$$ by
-introducing a collection of discrete invariants $$Gr$$ which classify $$M$$ up
-to Morita equivalence.
 
 ## Expository Material
 
