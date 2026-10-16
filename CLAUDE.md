@@ -16,3 +16,5 @@ previewing, and the Google Sites migration steps.
   downloads files.
 - The custom domain goes on this repo only (`CNAME` file), never on a
   `JDVillatoro.github.io` repo.
+- `cv.md` is a hand copy of `~/jobs/applications_2026/master/cv/CV.tex`, and
+  `files/cv.pdf` is that CV's PDF. When the CV changes, update both together.

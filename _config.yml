@@ -10,7 +10,7 @@ nav:
   - title: Research
     url: /research/
   - title: CV
-    url: /files/cv.pdf
+    url: /cv/
 
 # Math is shown with MathJax (loaded in _layouts/default.html). Kramdown treats
 # $$...$$ as math: inside a sentence it's inline, as its own paragraph it's a

@@ -21,7 +21,7 @@ differentiable stacks and connections with Poisson and symplectic geometry.
 
 **Contact:** (first name)david(last name) (at) gmail.com
 
-[Academic CV (PDF)]({{ '/files/cv.pdf' | relative_url }})
+[Academic CV]({{ '/cv/' | relative_url }})
 
 </div>
 </div>

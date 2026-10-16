@@ -98,6 +98,23 @@ img { max-width: 100%; height: auto; }
 .hero img { flex: 1 1 18rem; border-radius: 4px; }
 .hero > div { flex: 1 1 20rem; }
 
+/* Download link on the CV page, styled like the old site's buttons. */
+.button {
+  display: inline-block;
+  padding: 0.4rem 1.25rem;
+  border: 1px solid var(--dark-bg);
+  border-radius: 4px;
+  color: var(--dark-bg);
+  text-decoration: none;
+}
+.button:hover {
+  background: rgba(87, 108, 126, 0.1);
+  color: var(--dark-bg);
+}
+
+/* Long URLs (e.g. in the CV) wrap instead of widening the page on phones. */
+main { overflow-wrap: anywhere; }
+
 /* YouTube embeds: full width, 16:9. */
 .video iframe {
   width: 100%;
