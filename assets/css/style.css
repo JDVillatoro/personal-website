@@ -17,32 +17,38 @@
   --width: 56rem;
 }
 
+html { scroll-padding-top: 5rem; } /* links to #anchors land below the header */
+
 body {
   margin: 0;
   font: 12pt/1.56 "Open Sans", sans-serif;
   color: var(--text);
   background: var(--bg);
-  overflow-x: hidden; /* full-width bands include the scrollbar's width */
+  overflow-x: clip; /* full-width bands include the scrollbar's width */
 }
 
 a { color: var(--link); }
 a:hover { color: var(--link-hover); }
 
-/* Header: white bar, light-blue spaced-out site title, menu on the right. */
+/* Header: white bar that stays at the top while scrolling, like the old
+   site's. Full width; the side padding lines its contents up with the text. */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem 2rem;
-  max-width: var(--width);
-  margin: 0 auto;
-  padding: 1.25rem 1rem;
+  padding: 1rem max(1rem, calc((100% - var(--width)) / 2 + 1rem));
+  background: var(--bg);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 .site-title {
   font: 500 15pt Roboto, sans-serif;
   letter-spacing: 1.5px;
-  color: var(--accent);
+  color: var(--heading);
   text-decoration: none;
 }
 nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
