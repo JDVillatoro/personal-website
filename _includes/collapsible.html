@@ -1,6 +1,6 @@
 {%- comment -%}
   A collapsible block like the Google Site's: a title (and optional meta line)
-  with a round chevron button that shows the body.
+  with a round chevron button to its left that shows the body.
   Parameters: title, url (optional, links the title), meta (optional HTML),
   body (HTML; if empty, no button), tag (title heading level, default h3),
   class (extra class, e.g. "section" for a large heading).
@@ -18,8 +18,8 @@
 {%- if body != "" %}
 <details>
 <summary>
-{{ head }}
 <span class="chevron" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></span>
+{{ head }}
 </summary>
 <div class="collapsible-body">
 {{ body }}

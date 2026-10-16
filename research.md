@@ -4,9 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-<section class="band" markdown="1">
-
-# Research
+<section class="band tint" markdown="1">
 
 {% capture nonexperts %}
 My research is motivated by a deep interest in the study of the relationship
@@ -49,7 +47,11 @@ often motivated by trying to obtain a 'macro level' understanding of the
 geometric constructions and objects that appear in these fields.
 {% endcapture %}
 {% assign nonexperts = nonexperts | markdownify %}
-{% include collapsible.html title="For Non-Experts" tag="h2" class="section" body=nonexperts %}
+{% include collapsible.html title="About My Research" tag="h2" class="section" body=nonexperts %}
+
+</section>
+
+<section class="band" markdown="1">
 
 ## Papers and Preprints
 
