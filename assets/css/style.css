@@ -98,6 +98,47 @@ img { max-width: 100%; height: auto; }
 .hero img { flex: 1 1 18rem; border-radius: 4px; }
 .hero > div { flex: 1 1 20rem; }
 
+/* Collapsible blocks (_includes/collapsible.html), after the Google Site's:
+   title on the left, round chevron button on the right that flips when open. */
+.collapsible {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.75rem 0;
+}
+.collapsible.section { border-bottom: 0; padding-top: 0; }
+.collapsible summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.collapsible summary::-webkit-details-marker { display: none; }
+.collapsible-head { display: block; }
+.collapsible-title { margin: 0; }
+.collapsible.section .collapsible-title { margin: 1rem 0 0; }
+.collapsible-meta {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+}
+.chevron {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: var(--heading);
+  transition: background 0.15s, transform 0.2s;
+}
+.collapsible.section .chevron { margin-top: 1rem; }
+.collapsible summary:hover .chevron { background: rgba(87, 108, 126, 0.1); }
+.collapsible summary:focus-visible { outline: none; }
+.collapsible summary:focus-visible .chevron { outline: 2px solid var(--accent); }
+.collapsible details[open] .chevron { transform: rotate(180deg); }
+.collapsible-body > :last-child { margin-bottom: 0.25rem; }
+
 /* Download link on the CV page, styled like the old site's buttons. */
 .button {
   display: inline-block;

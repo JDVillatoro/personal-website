@@ -18,3 +18,5 @@ previewing, and the Google Sites migration steps.
   `JDVillatoro.github.io` repo.
 - `cv.md` is a hand copy of `~/jobs/applications_2026/master/cv/CV.tex`, and
   `files/cv.pdf` is that CV's PDF. When the CV changes, update both together.
+- Research page papers live in `_data/papers.yml`; `research.md` loops over
+  them with `_includes/collapsible.html` (`<details>`, no JavaScript).

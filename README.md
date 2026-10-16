@@ -11,6 +11,8 @@ Pages are Markdown; GitHub builds them into HTML with Jekyll on every push to
 | Path | What it is |
 |---|---|
 | `index.md` (about, employment, education), `research.md` (overview, papers, talks) | The pages. `permalink` in the front matter is the page's address. |
+| `_data/papers.yml` | The papers on the Research page (title, link, coauthors, venue, abstract). Edit papers here, not in `research.md`. |
+| `_includes/collapsible.html` | The expandable blocks (title + chevron button) used on the Research page. |
 | `_config.yml` | Site title, top menu (`nav`), settings. |
 | `_layouts/default.html` | The HTML around every page (header, menu, MathJax). |
 | `assets/css/style.css` | Styles. |

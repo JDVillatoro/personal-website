@@ -8,8 +8,7 @@ permalink: /research/
 
 # Research
 
-## For Non-Experts
-
+{% capture nonexperts %}
 My research is motivated by a deep interest in the study of the relationship
 between symmetry and singularities. At the most basic level, a symmetry is a
 permutation of a mathematical object which preserves a desirable structure. For
@@ -48,113 +47,18 @@ diffeology and category theory depending on the needs of the problem. For
 example, I frequently turn to Poisson and symplectic geometry and my work is
 often motivated by trying to obtain a 'macro level' understanding of the
 geometric constructions and objects that appear in these fields.
+{% endcapture %}
+{% assign nonexperts = nonexperts | markdownify %}
+{% include collapsible.html title="For Non-Experts" tag="h2" class="section" body=nonexperts %}
 
 ## Papers and Preprints
 
-### [On the holonomy of Lie algebroids](https://arxiv.org/abs/2608.19399)
-
-With Pooja Joshi. *Preprint* (2026).
-
-### [Simplicial sheaves of modules and Morita invariance of groupoid cohomology](https://arxiv.org/abs/2509.07285)
-
-With Xiang Tang. *Preprint* (2025).
-
-### [Convolution algebras of double groupoids and strict 2-groups](https://arxiv.org/abs/2312.00341)
-
-With Angel Román. *SIGMA* 20 (2024), 093.
-
-Double groupoids are a type of higher groupoid structure that can arise when
-one has two distinct groupoid products on the same set of arrows. A
-particularly important example of such structures is the irrational torus and,
-more generally, strict 2-groups. Groupoid structures give rise to convolution
-operations on the space of arrows. Therefore, a double groupoid comes equipped
-with two product operations on the space of functions. In this article we
-investigate in what sense these two convolution operations are compatible. We
-use the representation theory of compact Lie groups to get insight into a
-certain class of 2-groups.
-
-### [On the integrability of Lie algebroids by diffeological spaces](https://doi.org/10.1016/j.indag.2025.07.011)
-
-*Indagationes Mathematicae* 37 (2026), no. 4, 1192–1242.
-
-Lie's third theorem does not hold for Lie groupoids and Lie algebroids. In this
-article, we show that Lie's third theorem is valid within a specific class of
-diffeological groupoids that we call 'singular Lie groupoids.' To achieve this,
-we introduce a subcategory of diffeological spaces which we call
-'quasi-etale.' Singular Lie groupoids are precisely the groupoid objects within
-this category, where the unit space is a manifold.
-
-Our approach involves the construction of a functor that maps singular Lie
-groupoids to Lie algebroids, extending the classical functor from Lie groupoids
-to Lie algebroids. We prove that the Ševera-Weinstein groupoid of an algebroid
-is an example of a singular Lie groupoid, thereby establishing Lie's third
-theorem in this context.
-
-### [On sheaves of Lie-Rinehart algebras](https://arxiv.org/abs/2010.15463)
-
-*Preprint* (2020).
-
-We study sheaves of Lie-Rinehart algebras over locally ringed spaces. We
-introduce morphisms and comorphisms of such sheaves and prove factorization
-theorems for each kind of morphism. Using this notion of morphism, we obtain
-(higher) homotopy groups and groupoids for such objects which directly
-generalize the homotopy groups and Weinstein groupoids of Lie algebroids. We
-consider, the special case of sheaves of Lie-Rinehart algebras over smooth
-manifolds. We show that, under some reasonable assumptions, such sheaves induce
-a partition of the underlying manifold into leaves and that these leaves are
-precisely the orbits of the fundamental groupoid.
-
-### [Integration of singular foliations via paths](https://academic.oup.com/imrn/article-abstract/2022/23/18401/6362694)
-
-With Alfonso Garmendia. *International Mathematics Research Notices* 2022,
-no. 23, 18401–18445.
-
-We give a new construction of the holonomy and fundamental groupoids of a
-singular foliation. In contrast with the existing construction of
-Androulidakis and Skandalis, our method proceeds by taking a quotient of an
-infinite dimensional space of paths. This strategy is a direct extension of the
-classical construction for regular foliations and mirrors the integration of
-Lie algebroids via paths (per Crainic and Fernandes). In this way, we obtain a
-characterization of the holonomy and fundamental groupoids of a singular
-foliation that more clearly reflects the homotopic character of these
-invariants. As an application of our work, we prove that the constructions of
-the fundamental and holonomy groupoid of a foliation have functorial
-properties.
-
-### [Picard groups of b-symplectic manifolds](https://www.intlpress.com/site/pub/pages/journals/items/jsg/content/vols/0019/0003/a006/index.php)
-
-*Journal of Symplectic Geometry* 19 (2021), no. 3, 723–775.
-
-We compute the Picard group of a stable b-symplectic manifold $$M$$ by
-introducing a collection of discrete invariants $$Gr$$ which classify $$M$$ up
-to Morita equivalence.
-
-### [Stacks in Poisson Geometry](https://arxiv.org/abs/1806.01939) (PhD thesis)
-
-*PhD thesis, University of Illinois at Urbana-Champaign* (2018).
-
-This thesis is divided into four chapters. The first chapter discusses the
-relationship between stacks on a site and groupoids internal to the site. It
-includes a rigorous proof of the folklore result that there is an equivalence
-between the bicategory of internal groupoids and the bicategory of geometric
-stacks. The second chapter discusses standard concepts in the theory of
-geometric stacks, including Morita equivalence, stack symmetries, and some
-Morita invariants. The third chapter introduces a new site of Dirac structures
-and provides a rigorous answer to the question: What is the stack associated to
-a symplectic groupoid? The last chapter discusses a remarkable class of Poisson
-manifolds, called b-symplectic manifolds, giving a classification of them up to
-Morita equivalence and computing their Picard group.
-
-### [Poisson manifolds and their associated stacks](https://link.springer.com/article/10.1007/s11005-017-1012-5)
-
-*Letters in Mathematical Physics* (2018), no. 3, 897–926.
-
-We associate to any integrable Poisson manifold a stack, i.e., a category
-fibered in groupoids over a site. The site in question has objects Dirac
-manifolds and morphisms pairs consisting of a smooth map and a closed 2-form.
-We show that two Poisson manifolds are symplectically Morita equivalent if and
-only if their associated stacks are isomorphic. We also discuss the
-non-integrable case.
+<!-- The list comes from _data/papers.yml. -->
+{% for p in site.data.papers %}
+{% capture meta %}{% if p.coauthors %}With {{ p.coauthors }}. {% endif %}{{ p.venue | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endcapture %}
+{% assign abstract = p.abstract | markdownify %}
+{% include collapsible.html title=p.title url=p.url meta=meta body=abstract %}
+{% endfor %}
 
 ## Expository Material
 
