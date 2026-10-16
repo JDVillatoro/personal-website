@@ -1,6 +1,8 @@
 # personal-website
 
-Joel Villatoro's personal website, moving from Google Sites to GitHub Pages.
+Joel Villatoro's personal website, https://www.joelvillatoro.com/, moving from
+Google Sites to GitHub Pages. Repo: https://github.com/JDVillatoro/personal-website (public).
+
 Pages are Markdown; GitHub builds them into HTML with Jekyll on every push to
 `main`.
 
@@ -8,7 +10,7 @@ Pages are Markdown; GitHub builds them into HTML with Jekyll on every push to
 
 | Path | What it is |
 |---|---|
-| `index.md`, `research.md`, `teaching.md`, `cv.md` | The pages. `permalink` in the front matter is the page's address. |
+| `index.md` (about, employment, education), `research.md` (overview, papers, talks) | The pages. `permalink` in the front matter is the page's address. |
 | `_config.yml` | Site title, top menu (`nav`), settings. |
 | `_layouts/default.html` | The HTML around every page (header, menu, MathJax). |
 | `assets/css/style.css` | Styles. |
@@ -43,9 +45,9 @@ minute (progress under the repo's Actions tab).
    https://jdvillatoro.github.io/personal-website/. Check it there.
 3. Verify the domain with GitHub (account Settings → Pages → Add a domain),
    which stops anyone else's repo from claiming it.
-4. Switch over: add a `CNAME` file containing just the domain, push, and
-   change DNS at the registrar (remove Google Sites' records first):
-   - apex (`example.com`): four `A` records to `185.199.108.153`,
+4. Switch over: add a `CNAME` file containing just `www.joelvillatoro.com`,
+   push, and change DNS at the registrar (remove Google Sites' records first):
+   - apex (`joelvillatoro.com`): four `A` records to `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `www`: a `CNAME` record to `jdvillatoro.github.io`
 5. After DNS updates (minutes to hours), tick "Enforce HTTPS" under
