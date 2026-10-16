@@ -6,11 +6,29 @@
   url: https://arxiv.org/abs/2608.19399
   coauthors: Pooja Joshi
   venue: '*Preprint* (2026).'
+  abstract: |
+    We introduce a holonomy groupoid for Lie algebroids. This construction
+    generalizes both the holonomy groupoid of a foliation and the adjoint
+    representation of a Lie algebra. We prove that the resulting groupoid is
+    longitudinally smooth and compute its Lie algebroid. When the algebroid of
+    the holonomy groupoid coincides with the given Lie algebroid, the holonomy
+    groupoid is the canonical terminal integration: every source-connected
+    integration admits a unique morphism into it inducing the identity
+    infinitesimally. To construct the groupoid structure on the holonomy
+    groupoid, we utilize the notion of the "flow product" of time-dependent
+    sections of a Lie algebroid. This provides an alternative way to define the
+    groupoid structure for the Weinstein groupoid.
 
 - title: Simplicial sheaves of modules and Morita invariance of groupoid cohomology
   url: https://arxiv.org/abs/2509.07285
   coauthors: Xiang Tang
   venue: '*Preprint* (2025).'
+  abstract: |
+    In this article we develop a unified framework for proving Morita invariance
+    of cohomology theories associated to Lie groupoids. Our approach is to view
+    these cohomology theories as arising from sheaves of modules on the nerve of
+    the groupoid. We establish criteria for when such sheaves of modules give
+    rise to Morita invariant cohomology theories.
 
 - title: Convolution algebras of double groupoids and strict 2-groups
   url: https://arxiv.org/abs/2312.00341
