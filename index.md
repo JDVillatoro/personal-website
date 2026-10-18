@@ -31,7 +31,7 @@ differentiable stacks and connections with Poisson and symplectic geometry.
 
 ## Academic Employment
 
-- **2024–present:** Visiting Lecturer, Indiana University Bloomington
+- **2024–present:** Lecturer, Indiana University Bloomington
 - **2022–2024:** NSF Postdoctoral Fellow, Washington University in St. Louis
 - **2021:** Postdoctoral Fellow, Max Planck Institute for Mathematics, Bonn
 - **2018–2021:** Postdoctoral Fellow, KU Leuven, Belgium
